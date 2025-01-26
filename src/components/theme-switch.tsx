@@ -4,7 +4,7 @@ import dynamic from "next/dynamic"
 import { useTheme } from "next-themes"
 import { Moon } from "lucide-react"
 
-const Switch = dynamic(() => import("@/components/ui/switch").then(module => module.Switch), { ssr: false })
+const Switch = dynamic(() => import("@/components/ui/switch").then(module => module.Switch), { ssr: false, loading: () => <div className="w-9 h-5 rounded-full bg-slate-600 dark:bg-primary"></div> })
 
 const THEME = {
   DARK: 'dark',
