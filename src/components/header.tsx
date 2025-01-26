@@ -4,7 +4,7 @@ import { FontSelector } from "@/components/font-selector";
 
 export function Header() {
   return (
-    <header className="flex justify-between items-center pb-8">
+    <header className="flex justify-between items-center mb-8">
       <Link href='/' className="text-gray-500 dark:text-primary hover:text-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"

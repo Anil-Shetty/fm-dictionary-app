@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { FontProvider } from "@/components/font-provider"
 import { Header } from "@/components/header"
 import { Geist, Geist_Mono, Noto_Serif } from "next/font/google"
+import { SearchForm } from "@/components/search-form"
 
 const geistSans = Geist({
   variable: "--font-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
         >
           <FontProvider className="max-w-3xl min-h-screen mx-auto px-4 md:px-6 lg:px-0 py-8">
             <Header />
+            <SearchForm />
             <main>
               {children}
             </main>
